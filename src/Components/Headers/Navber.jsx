@@ -69,7 +69,7 @@ const Navber = () => {
                             <a onClick={handleLogOut} className="btn">Sign Out</a>
                         </> : <>
                         <button onClick={handleGoogleLogin} className="btn btn-outline mr-2">Login with google</button>
-                        <Link to="/login"> <button className="btn ">Sign In</button> </Link>
+                        <Link to="/login"> <button className="btn ">Log In</button> </Link>
 
                         </>
                     }
