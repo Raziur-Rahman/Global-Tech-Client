@@ -40,6 +40,7 @@ const Navber = () => {
         <li className="font-semibold"> <NavLink to='/register'>Register</NavLink> </li>
         <li className="font-semibold"> <NavLink to='/addproducts'>Add Product</NavLink> </li>
         <li className="font-semibold"> <NavLink to='/cart'>My Cart</NavLink> </li>
+        <li className="font-semibold"> <NavLink to='/updateproducts'>Update</NavLink> </li>
     </>
 
     return (

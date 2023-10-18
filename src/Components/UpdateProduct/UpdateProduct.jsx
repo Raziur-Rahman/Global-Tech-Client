@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const AddProducts = () => {
+const UpdateProduct = () => {
 
 
     const handleSubmit = event => {
@@ -25,8 +25,8 @@ const AddProducts = () => {
         <>
             <div className="w-full md:w-5/6 xl:w-2/3 bg-base-300 mx-auto px-5 lg:px-20 py-8 my-12 rounded-md space-y-5 shadow-2xl">
                 <div className="px-5 md:px-16 mb-10 text-center space-y-5">
-                    <h1 className="text-3xl">Add New Products</h1>
-                    <p>It is long established fact that a raeder will be distracted by the readable content of a psge when looking at its layout. The point of using lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content hare.</p>
+                    <h1 className="text-3xl">Update Products Details</h1>
+                    <p>It is long established fact that a raeder will be distracted by the readable content of a psge when looking at its layout. <span className='font-bold text-amber-600'>Note: Please insert brand name as like as Other Products of same brand.</span></p>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="flex flex-col lg:flex-row gap-5 ">
@@ -71,18 +71,12 @@ const AddProducts = () => {
                             <label className="label">
                                 <span className="label-text">Image</span>
                             </label>
-                            <input type="text" placeholder="Image URL" name="image" className="input input-bordered w-full" />
+                            <input type="text" placeholder="Image URL" name="Image" className="input input-bordered w-full" />
                         </div>
-                    </div>
-                    <div className="form-control w-full">
-                        <label className="label">
-                            <span className="label-text">Short Description</span>
-                        </label>
-                        <input type="text" placeholder="Short Description" name="description" className="input input-bordered w-full" />
                     </div>
                     <input className="btn py-2 mt-4 bg-amber-700 text-white w-full hover:bg-amber-500" type="submit" value="ADD Product" />
                 </form>
-                <div className='my-5 '>
+                <div className=' my-5 '>
                     <Link to='/'>
                         <button className='btn btn-outline '>Back to Home</button>
                     </Link>
@@ -94,4 +88,4 @@ const AddProducts = () => {
 };
 
 
-export default AddProducts;
+export default UpdateProduct;
