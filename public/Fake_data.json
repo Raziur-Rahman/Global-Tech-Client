@@ -1,0 +1,51 @@
+[
+    {
+      "brand_name": "Sony",
+      "brand_image": "https://i.ibb.co/N6GjwS8/Sony.png",
+      "industry": "Information Technology",
+      "founded_year": 2005,
+      "hq_location": "Silicon Valley, USA",
+      "website": "https://www.sony.com"
+    },
+    {
+      "brand_name": "Google",
+      "brand_image": "https://i.ibb.co/QmjLMJr/Google.png",
+      "industry": "Technology",
+      "founded_year": 1998,
+      "hq_location": "Mountain View, USA",
+      "website": "https://www.google.com"
+    },
+    {
+      "brand_name": "Apple",
+      "brand_image": "https://i.ibb.co/pZxGCVC/Apple.png",
+      "industry": "Technology",
+      "founded_year": 1976,
+      "hq_location": "Cupertino, USA",
+      "website": "https://www.apple.com"
+    },
+    {
+      "brand_name": "Walton",
+      "brand_image": "https://i.ibb.co/Jsbb8JL/Walton.png",
+      "industry": "Consumer Electronics",
+      "founded_year": 1977,
+      "hq_location": "Dhaka, Bangladesh",
+      "website": "https://www.waltonbd.com"
+    },
+    {
+      "brand_name": "Oppo",
+      "brand_image": "https://i.ibb.co/ft8pKqG/Oppo.png",
+      "industry": "Technology",
+      "founded_year": 2001,
+      "hq_location": "Dongguan, China",
+      "website": "https://www.oppo.com"
+    },
+    {
+      "brand_name": "Vivo",
+      "brand_image": "https://i.ibb.co/WvxtrdL/Vivo.png",
+      "industry": "Technology",
+      "founded_year": 2009,
+      "hq_location": "Dongguan, China",
+      "website": "https://www.vivo.com"
+    }
+  ]
+  
