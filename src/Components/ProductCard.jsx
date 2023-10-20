@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
 
-    console.log(product)
-
     const { Image, ProductName, BrandName, ProductType, Price, Rating, _id } = product;
 
     return (
@@ -36,7 +34,7 @@ const ProductCard = ({ product }) => {
                     <div className="flex justify-around items-end align-baseline">
                         <Link to={`/productsDetails/${_id}`}><button className="btn btn-primary">Details</button></Link>
 
-                        <Link to={`/updateProducts/:${_id}`}><button className="btn btn-primary">Update</button></Link>
+                        <Link to={`/updateProducts/${_id}`}><button className="btn btn-primary">Update</button></Link>
                     </div>
                 </div>
             </div>

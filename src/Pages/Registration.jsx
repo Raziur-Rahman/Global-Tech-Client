@@ -17,7 +17,9 @@ const Registration = () => {
 
     const handleRegistration = event => {
         event.preventDefault();
+
         const form = event.target;
+        
         const Name =form.Name.value;
         const photo =form.Photo.value;
         const email =form.email.value;

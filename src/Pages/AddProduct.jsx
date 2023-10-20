@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 
 const AddProducts = () => {
 
@@ -7,17 +8,35 @@ const AddProducts = () => {
         event.preventDefault();
         const form = event.target;
 
-        const name = form.name.value;
+        const ProductName = form.name.value;
         const BrandName = form.brandName.value;
         const ProductType = form.type.value;
         const Price = form.Price.value;
         const Rating = form.Rating.value;
         const Description = form.description.value;
-        const Image = form.Image.value;
+        const Image = form.image.value;
 
-        const newProduct = { name, BrandName, ProductType, Price, Rating, Description, Image }
+        const newProduct = { ProductName, BrandName, ProductType, Price, Rating, Description, Image }
 
         console.log(newProduct)
+
+        fetch('http://localhost:5000/products', {
+            method: 'POST',
+            headers: {
+                'content-type': "application/json"
+            },
+            body: JSON.stringify(newProduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.insertedId) {
+                    swal("Good job!", "Your Product Added To The Database", "success");
+                }
+                else{
+                    swal("Oopps!", "Send fails, Something is Wrong", "error");
+                }
+            })
 
     }
 
