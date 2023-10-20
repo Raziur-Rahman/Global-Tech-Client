@@ -1,51 +1,43 @@
 [
     {
-      "brand_name": "Sony",
-      "brand_image": "https://i.ibb.co/N6GjwS8/Sony.png",
-      "industry": "Information Technology",
-      "founded_year": 2005,
-      "hq_location": "Silicon Valley, USA",
-      "website": "https://www.sony.com"
+      "ProductName": "Walton Prime X",
+      "BrandName": "Walton",
+      "ProductType": "Smartphone",
+      "Price": 299.99,
+      "Rating": 4.5,
+      "Image": "https://i.ibb.co/px6sF13/walton-prime-x.jpg",
+      "ShortDescription": "A feature-packed smartphone with a large display and long battery life.",
+      "Specification": "6.5-inch HD+ IPS display, MediaTek Helio G70 processor, 4GB RAM, 64GB storage, 5000mAh battery."
     },
     {
-      "brand_name": "Google",
-      "brand_image": "https://i.ibb.co/QmjLMJr/Google.png",
-      "industry": "Technology",
-      "founded_year": 1998,
-      "hq_location": "Mountain View, USA",
-      "website": "https://www.google.com"
+      "ProductName": "Walton Horizon H4",
+      "BrandName": "Walton",
+      "ProductType": "Refrigerator",
+      "Price": 699.99,
+      "Rating": 4.6,
+      "Image": "https://i.ibb.co/Dw3gNRf/walton-horizon-h4.jpg",
+      "ShortDescription": "A spacious and energy-efficient refrigerator with advanced cooling technology.",
+      "Specification": "Double door refrigerator, 320-liter capacity, Frost Free, Inverter compressor, LED lighting."
     },
     {
-      "brand_name": "Apple",
-      "brand_image": "https://i.ibb.co/pZxGCVC/Apple.png",
-      "industry": "Technology",
-      "founded_year": 1976,
-      "hq_location": "Cupertino, USA",
-      "website": "https://www.apple.com"
+      "ProductName": "Walton 55 Inch 4K UHD TV",
+      "BrandName": "Walton",
+      "ProductType": "TV",
+      "Price": 799.99,
+      "Rating": 4.7,
+      "Image": "https://i.ibb.co/2Y0ZJx4/walton-55-inch-4k-uhd-tv.jpg",
+      "ShortDescription": "A high-quality 4K UHD TV with vibrant colors and immersive sound.",
+      "Specification": "55-inch 4K UHD display, HDR10, Dolby Vision, DTS Virtual:X, Android TV."
     },
     {
-      "brand_name": "Walton",
-      "brand_image": "https://i.ibb.co/Jsbb8JL/Walton.png",
-      "industry": "Consumer Electronics",
-      "founded_year": 1977,
-      "hq_location": "Dhaka, Bangladesh",
-      "website": "https://www.waltonbd.com"
-    },
-    {
-      "brand_name": "Oppo",
-      "brand_image": "https://i.ibb.co/ft8pKqG/Oppo.png",
-      "industry": "Technology",
-      "founded_year": 2001,
-      "hq_location": "Dongguan, China",
-      "website": "https://www.oppo.com"
-    },
-    {
-      "brand_name": "Vivo",
-      "brand_image": "https://i.ibb.co/WvxtrdL/Vivo.png",
-      "industry": "Technology",
-      "founded_year": 2009,
-      "hq_location": "Dongguan, China",
-      "website": "https://www.vivo.com"
+      "ProductName": "Walton Air Conditioner Inverter",
+      "BrandName": "Walton",
+      "ProductType": "Home Appliance",
+      "Price": 899.99,
+      "Rating": 4.5,
+      "Image": "https://i.ibb.co/xHbXn5d/walton-air-conditioner-inverter.jpg",
+      "ShortDescription": "An energy-efficient inverter AC with smart cooling features for ultimate comfort.",
+      "Specification": "1.5 Ton capacity, Inverter technology, Energy-saving mode, Sleep mode, Turbo cooling."
     }
   ]
   

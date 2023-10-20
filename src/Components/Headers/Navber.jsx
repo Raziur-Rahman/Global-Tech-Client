@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, NavLink, useNavigate} from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,17 +22,17 @@ const Navber = () => {
                 toast(`${error}`)
             })
     }
-    const handleGoogleLogin =() =>{
+    const handleGoogleLogin = () => {
         userLogInWithGoogle()
-        .then(result =>{
-            console.log(result.user);
-            toast("Login SuccessFull!!!")
-            navigate("/")
-        })
-        .catch(error => {
-            console.error(error);
-            toast(`${error}`)
-        })
+            .then(result => {
+                console.log(result.user);
+                toast("Login SuccessFull!!!")
+                navigate("/")
+            })
+            .catch(error => {
+                console.error(error);
+                toast(`${error}`)
+            })
     }
 
     const NavLinks = <>
@@ -55,9 +55,12 @@ const Navber = () => {
                             {NavLinks}
                         </ul>
                     </div>
-                    <Link to="/"> <button className="btn btn-ghost normal-case text-xl">Quantum Technologies</button> </Link>
+                    <Link to="/"> <div className="flex">
+                        <img className="w-[50px] rounded-full" src={`https://i.ibb.co/1sv7zcM/logo.jpg`} alt="" />
+                        <button className="btn btn-ghost normal-case text-xl">Global Tech</button>
+                    </div> </Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex items-center">
                     <ul className="menu menu-horizontal px-1">
                         {NavLinks}
                     </ul>
@@ -69,8 +72,8 @@ const Navber = () => {
                             <span><img className="w-[50px] mx-4 rounded-full" src={user?.photoURL} alt="picture" /></span>
                             <a onClick={handleLogOut} className="btn">Sign Out</a>
                         </> : <>
-                        <button onClick={handleGoogleLogin} className="btn btn-outline mr-2">Login with google</button>
-                        <Link to="/login"> <button className="btn ">Log In</button> </Link>
+                            <button onClick={handleGoogleLogin} className="btn btn-outline mr-2">Login with google</button>
+                            <Link to="/login"> <button className="btn ">Log In</button> </Link>
 
                         </>
                     }
