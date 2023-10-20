@@ -22,7 +22,7 @@ const Cart = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`http://localhost:5000/cart/${id}`, {
+                    fetch(`https://brand-shop-server-afz8opyrk-raziurrahmans-projects.vercel.app/cart/${id}`, {
                         method: "DELETE"
                     })
                         .then(res => res.json())

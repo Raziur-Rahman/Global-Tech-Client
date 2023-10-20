@@ -19,7 +19,7 @@ const ProductsDetails = () => {
 
     const handleAddCart = id => {
         console.log(id);
-        fetch('http://localhost:5000/cart', {
+        fetch('https://brand-shop-server-afz8opyrk-raziurrahmans-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type':"application/json"
