@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
 
     console.log(product)
 
-    const { Image, ProductName, BrandName, ProductType, Price, Rating } = product;
+    const { Image, ProductName, BrandName, ProductType, Price, Rating, _id } = product;
 
     return (
         <div>
@@ -33,8 +34,9 @@ const ProductCard = ({ product }) => {
                         </button>
                     </div>
                     <div className="flex justify-around items-end align-baseline">
-                        <button className="btn btn-primary">Details</button>
-                        <button className="btn btn-primary">Update</button>
+                        <Link to={`/productsDetails/${_id}`}><button className="btn btn-primary">Details</button></Link>
+
+                        <Link to={`/updateProducts/:${_id}`}><button className="btn btn-primary">Update</button></Link>
                     </div>
                 </div>
             </div>
