@@ -10,4 +10,4 @@
 + Products data will be load dynamicaly from database. products route also have a advertisement slider.
 
 # Live Link Of this Project
-[link with title](http://nodeca.github.io/pica/demo/ "Global Tech")
+[Global tech](https://brand-shop-client-8fc69.web.app/ "Global Tech")
