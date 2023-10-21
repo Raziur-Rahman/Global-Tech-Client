@@ -1,13 +1,19 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import swal from "sweetalert";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const ProductsDetails = () => {
+
+    const { user } = useContext(AuthContext);
+    const email = user.email;
     const [specs, setSpecs] = useState([]);
     const data = useLoaderData();
 
     const { ProductType, ProductName, BrandName, Price, Rating, Image, ShortDescription, _id } = data;
+
+    const addCartData = {...data,email }
 
     useEffect(() => {
         const features = data?.Specification;
@@ -19,12 +25,12 @@ const ProductsDetails = () => {
 
     const handleAddCart = id => {
         console.log(id);
-        fetch('https://brand-shop-server-afz8opyrk-raziurrahmans-projects.vercel.app/cart', {
+        fetch('https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type':"application/json"
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(addCartData)
         })
         .then(res => res.json())
         .then(data => {
