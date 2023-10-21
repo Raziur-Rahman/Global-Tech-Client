@@ -8,3 +8,6 @@
 + if nodata in database cart section user will get a not found massege.
 + in home Brands are dynamically load from database, by clicking them it redirect to Products routes of that brand only.
 + Products data will be load dynamicaly from database. products route also have a advertisement slider.
+
+# Live Link Of this Project
+[link with title](http://nodeca.github.io/pica/demo/ "Global Tech")
