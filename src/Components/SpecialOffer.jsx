@@ -8,7 +8,7 @@ const SpecialOffer = () => {
 
 
     useEffect(() => {
-        fetch(`https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/products`)
+        fetch(`https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/products`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

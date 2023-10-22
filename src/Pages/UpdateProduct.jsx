@@ -6,25 +6,25 @@ const UpdateProduct = () => {
     const data = useLoaderData();
     // console.log(data);
 
-    const { ProductType, ProductName, BrandName, Price, Rating, Image, Description, _id } = data;
+    const { ProductType, ProductName, BrandName, Price, Rating, Image, ShortDescription, _id } = data;
     console.log(ProductName)
 
     const handleSubmit = e => {
         e.preventDefault();
         const form = e.target;
 
-        const name = form.name.value;
+        const ProductName = form.name.value;
         const BrandName = form.brandName.value;
         const ProductType = form.type.value;
         const Price = form.Price.value;
         const Rating = form.Rating.value;
         const Image = form.Image.value;
 
-        const updatedProduct = { name, BrandName, ProductType, Price, Rating, Image, Description }
+        const updatedProduct = { ProductName, BrandName, ProductType, Price, Rating, Image, ShortDescription }
 
         // console.log(updatedProduct)
 
-        fetch(`https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/products/${_id}`, {
+        fetch(`https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': "application/json"
@@ -35,7 +35,7 @@ const UpdateProduct = () => {
             .then(data => {
                 console.log(data)
                 if (data.modifiedCount > 0) {
-                    swal("Good job!", "Coffee Updated Successfully..", "success");
+                    swal("Good job!", "Product Updated Successfully..", "success");
                 }
                 else{
                     swal("Oopps!", "Something is Wrong, Update Failed...", "error");

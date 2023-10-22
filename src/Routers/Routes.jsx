@@ -11,7 +11,7 @@ import ProductsDetails from "../Components/ProductsDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "../Pages/ErrorPage";
 
-// https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app
+// https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app
 
 const router = createBrowserRouter([
     {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-                loader: () => fetch("https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/brands")
+                loader: () => fetch("https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/brands")
             },
             {
                 path:'/login',
@@ -35,12 +35,12 @@ const router = createBrowserRouter([
             {
                 path:'/products/:brand',
                 element:<BrandProducts></BrandProducts>,
-                loader: ({params}) => fetch(`https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/products/${params.brand}`)
+                loader: ({params}) => fetch(`https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/products/${params.brand}`)
             },
             {
                 path:'/cart/:email',
                 element:<PrivateRoutes><Cart></Cart></PrivateRoutes>,
-                loader: ({params}) => fetch(`https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/cart/${params.email}`)
+                loader: ({params}) => fetch(`https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/cart/${params.email}`)
             },
             {
                 path:'/addproducts',
@@ -49,12 +49,12 @@ const router = createBrowserRouter([
             {
                 path:'/updateProducts/:id',
                 element:<PrivateRoutes><UpdateProduct></UpdateProduct></PrivateRoutes>,
-                loader: ({params})=> fetch(`https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/product/${params.id}`)
+                loader: ({params})=> fetch(`https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/product/${params.id}`)
             },
             {
                 path: '/productsDetails/:id',
                 element: <PrivateRoutes><ProductsDetails></ProductsDetails></PrivateRoutes>,
-                loader: ({params})=> fetch(`https://brand-shop-server-88eektvuc-raziurrahmans-projects.vercel.app/product/${params.id}`)
+                loader: ({params})=> fetch(`https://brand-shop-server-4p3yk6n9b-raziurrahmans-projects.vercel.app/product/${params.id}`)
             }
         ],
     },
